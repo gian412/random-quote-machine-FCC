@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Lobster", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: #abb2bf;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*a,
+button {
+  background-color: #3890e9;
+  color: #282c34;
+}*/
+
+#quote-box {
+  margin: auto;
+  max-width: 40%;
+  display: grid;
+  grid-template-rows: 100px, auto, auto, auto;
+  grid-template-columns: 33%, 33%, 33%;
+  grid-gap: 10px;
+  vertical-align: middle;
+}
+
+#span {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  height: 40px;
+}
+
+#quote {
+  grid-row: 2/ 3;
+  grid-column: 1 / 4;
+}
+
+#author-box {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+#buttons {
+  grid-row: 4/5;
+  grid-column: 1/4;
+
+  display: grid;
+  grid-template-columns: auto, auto, auto;
+}
+
+#tweet-quote {
+  grid-column: 1/2;
+  width: 45px;
+}
+
+#new-quote {
+  grid-column: 3/4;
+}
+
+button {
+  border-radius: 8px;
+  color: #abb2bf !important;
+}
+
+i.fa,
+i.fas,
+i.fab {
+  color: #abb2bf !important;
+}
